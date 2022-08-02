@@ -1,0 +1,76 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'GothicA1-Light';
+}
+.serviceHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #483834;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top:50px
+}
+.serviceHeader span {
+  position: relative;
+  margin-bottom: 10px;
+}
+.serviceHeader span::after,
+.serviceHeader span::before {
+  content: "";
+  display: inline-block;
+  width: 43px;
+  height: 11px;
+  
+}
+.serviceHeader span::before {
+  margin-right: 10px;
+  background: url("http://www.baskinrobbins.co.kr/assets/images/common/icon_title_1.png")
+    no-repeat;
+}
+.serviceHeader span::after {
+  margin-left: 10px;
+  background: url("http://www.baskinrobbins.co.kr/assets/images/common/icon_title_2.png")
+    no-repeat;
+}
+
+.serviceContent-tab{
+    width:50%;
+    height: 5vh;
+    border: 1px solid rgb(211, 211, 211) ;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    display: flex;
+    cursor: pointer;
+}
+
+.serviceContent-first{
+    width: 50%;
+    height: 5vh;
+    border-right: 1px solid rgb(211, 211, 211) ;
+    background: url('http://www.baskinrobbins.co.kr/assets/images/customer/ccm_tap.gif') 0px top no-repeat ;
+}
+.first-on,
+.serviceContent-first:hover{
+    background: url('http://www.baskinrobbins.co.kr/assets/images/customer/ccm_tap.gif') 0px bottom no-repeat ;
+}
+.serviceContent-second{
+    width: 50%;
+    height: 5vh;
+    border-left: 1px solid rgb(211, 211, 211) ;
+    background: url('http://www.baskinrobbins.co.kr/assets/images/customer/ccm_tap.gif')  right top no-repeat ;
+}
+.second-on,.serviceContent-second:hover{
+  background: url('http://www.baskinrobbins.co.kr/assets/images/customer/ccm_tap.gif') right bottom no-repeat ;
+}
+
+
+.serviceContent-1page{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

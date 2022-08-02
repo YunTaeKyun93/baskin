@@ -1,0 +1,44 @@
+  .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "GothicA1-Light";
+}
+.contactHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #483834;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.contactHeader span {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .contactHeader span::after,
+  .contactHeader span::before {
+    content: "";
+    display: inline-block;
+    width: 43px;
+    height: 11px;
+    
+  }
+  .contactHeader span::before {
+    margin-right: 10px;
+    background: url("http://www.baskinrobbins.co.kr/assets/images/common/icon_title_1.png")
+      no-repeat;
+  }
+  .contactHeader span::after {
+    margin-left: 10px;
+    background: url("http://www.baskinrobbins.co.kr/assets/images/common/icon_title_2.png")
+      no-repeat;
+  }
+  .contactContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

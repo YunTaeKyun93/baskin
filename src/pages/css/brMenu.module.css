@@ -1,0 +1,52 @@
+.wrapper {
+  margin-top: 50px;
+  width: 100%;
+  height: 120vh;
+  background: url("http://www.baskinrobbins.co.kr/assets/images/main/bg_menu.jpg");
+  background-position-x: 50%;
+  background-position-y: 0px;
+  position: relative;
+  
+}
+
+.brMenu-title {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.brMenu {
+  position: absolute;
+}
+.icecream {
+  left: 30%;
+  top: 7%;
+  z-index: 1;
+}
+.cake {
+  left: 49%;
+  top: 15%;
+}
+.logo {
+  left: 39%;
+  top: 50%;
+  width: 300px;
+  height: 300px;
+}
+.logo img {
+  width: 100%;
+}
+.drink {
+  left: 15%;
+  top: 40%;
+}
+.present {
+  left: 50%;
+  top: 50%;
+}
+.dessert {
+  left: 32%;
+  top: 60%;
+}

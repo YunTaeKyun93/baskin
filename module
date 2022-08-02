@@ -1,0 +1,13 @@
+yarn add sass 스타일 모듈
+yarn add styled-components 스타일 모듈
+yarn add classnames  스타일 모듈
+yarn add react-router-dom@ 라우터
+yarn add react-redux 리덕스
+yarn add @reduxjs/toolkit react-redux 리덕스
+yarn add react-slick --save 슬라이더
+yarn add -D slick-carousel react-slick의 스타일 import 하기 위함
+yarn add @material-ui/icons 아이콘
+yarn add @material-ui/core 아이콘
+yarn add @mui/icons-material 아이콘( 잘안됨 이유 파악하기)
+yarn add react-icons 아이콘
+yarn add react-bootstrap bootstrp 부트스트랩
