@@ -1,4 +1,6 @@
-let drink = [
+import { createSlice } from '@reduxjs/toolkit';
+
+let initialState = [
   {
     id: 0,
     name: "마우라노아 마카다미아 블라스트",
@@ -7,7 +9,7 @@ let drink = [
   },
   {  id: 1,
     name: "푸린 피치 블라스트",
-    hash:['피치',블라스트],
+    hash:['피치','블라스트'],
     img:'http://www.baskinrobbins.co.kr/upload/product/1720173822.png'
 },
 {  id: 2,
@@ -102,3 +104,10 @@ let drink = [
     img:'http://www.baskinrobbins.co.kr/upload/product/1619856202.png'
 },
 ];
+
+let drinkData = createSlice({
+    name:'drinkData',
+    initialState,
+  })
+  
+  export default drinkData;

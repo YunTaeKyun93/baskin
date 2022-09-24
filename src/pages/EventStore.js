@@ -63,7 +63,7 @@ const EventStore = () => {
             {eventStore.map((a,i) => {
               return (
                 <div className={ss("eventCard")} key={i} >
-                  <img src={a.img} className={ss("eventBanner")} />
+                  <img src={a.img} className={ss("eventBanner")}/>
                   <img src={a.event} />
                   <span style={{fontSize:'15px'}} >{a.name}</span>
                   <p style={{fontSize:'12px',color:'gray'}}>{a.eventPeriod}</p>

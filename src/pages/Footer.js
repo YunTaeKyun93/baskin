@@ -72,7 +72,7 @@ const Footer = () => {
             <div className={ss("footer-info-top")}>
               <p>사업자 등록번호 : 999-99-99999</p>
               <p>비알코리아(주) 대표이사 000</p>
-              <adress>부산시 수영로 267번길 47</adress>
+              <p>부산시 수영로 267번길 47</p>
             </div>
             <div className={ss("footer-info-bottom")}>
               <p>TEL: 010-5594-4641</p>

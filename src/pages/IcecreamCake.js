@@ -9,14 +9,14 @@ import classNames from "classnames/bind";
 import styles from "./css/iceCream.module.css";
 
 const ss = classNames.bind(styles);
-const Icecream = () => {
+const IcecreamCake = () => {
   let iceCreamRank = useSelector((state) => state.iceCreamRank);
-  let iceCreamData = useSelector((state) => state.icecream);
+  let iceCreamData = useSelector((state) => state.iceCreamData);
 
   return (
     <Fragment>
       <div className={ss("wrapper")}>
-        <div className={ss("mainBg")} style={{background:`url(http://www.baskinrobbins.co.kr/assets/images/menu/bg_icecream_menu.gif) no-repeat`, backgroundPosition:"50%,0"}} ></div>
+        <div className={ss("mainBg")}></div>
         <div className={ss("bestIceCream")}>
           <h3 className={ss("bestIceCream-title")}>
             <img
@@ -49,7 +49,7 @@ const Icecream = () => {
           <Container>
             <Container>
               <Row>
-                {iceCreamData.map((item,i) => {
+                {iceCreamData.map((item, i) => {
                   return (
                     <Col lg={3} md={6} sm={12}>
                       <ProductCard item={item} key={i} />
@@ -58,8 +58,6 @@ const Icecream = () => {
                 })}
               </Row>
             </Container>
-
-   
           </Container>
         </div>
       </div>
@@ -67,4 +65,5 @@ const Icecream = () => {
   );
 };
 
-export default Icecream;
+export default IcecreamCake;
+

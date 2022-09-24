@@ -29,14 +29,14 @@ const ServiceCenter = () => {
           <div
             className={ss(
               "serviceContent-first",
-              `${serviceTab == true ? "first-on" : ""}`
+              `${serviceTab == true && "first-on"}`
             )}
             onClick={choiceTap}
           ></div>
           <div
             className={ss(
               "serviceContent-second",
-              `${serviceTab == false ? "second-on" : ""}`
+              `${serviceTab == false && "second-on"}`
             )}
             onClick={choiceTap}
           ></div>

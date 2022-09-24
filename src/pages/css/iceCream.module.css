@@ -1,0 +1,81 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainBg {
+  width: 100%;
+  height: 30vh;
+  
+}
+.bestIceCream-title {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bestIceCream-rankWrap {
+  min-width: 1200px;
+  height: 20vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+.bestIceCream-slider {
+  position: absolute;
+  width: 100vw;
+}
+.bestIceCream-slider > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bestIceCream-item {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(244, 244, 244);
+}
+.bestIceCream-item > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.iceCream-content {
+  width: 60vw;
+}
+.iceCream-header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 0;
+}
+.iceCream-header > span {
+  position: relative;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+.iceCream-header > span::after,
+.iceCream-header > span::before {
+  content: "";
+  display: inline-block;
+  width: 43px;
+  height: 11px;
+}
+.iceCream-header span::before {
+  margin-right: 10px;
+  background: url("http://www.baskinrobbins.co.kr/assets/images/common/icon_title_1.png")
+    no-repeat;
+}
+.iceCream-header span::after {
+  margin-left: 10px;
+  background: url("http://www.baskinrobbins.co.kr/assets/images/common/icon_title_2.png")
+    no-repeat;
+}

@@ -1,4 +1,6 @@
-let = iceCream = [
+import { createSlice } from '@reduxjs/toolkit';
+
+let initialState = [
   {
     id: 0,
     name: "잡아라! 포켓몬 몬스터볼",
@@ -10,7 +12,7 @@ let = iceCream = [
     id: 1,
     name: "복닥복닥 닥트리오",
     hash: ["포켓몬", "닥트리오"],
-    img: http://www.baskinrobbins.co.kr/upload/product/1714977259.png
+    img: 'http://www.baskinrobbins.co.kr/upload/product/1714977259.png'
 
   },
   {
@@ -64,7 +66,7 @@ let = iceCream = [
   {
     id: 10,
     name: "트웡클 잔망 루피",
-    hash: [],
+    hash: ['루피'],
     img:'http://www.baskinrobbins.co.kr/upload/product/1714977808.png'
   },
   {
@@ -121,5 +123,11 @@ let = iceCream = [
     hash: ["쿠키앤크림", "엄마는외계인","슈팅스타","레인보우샤베트","베리베리스트로베리"],
     img:'http://www.baskinrobbins.co.kr/upload/product/1688812388.png'
   },
+]
 
-];
+let iceCreamCakeData = createSlice({
+  name:'iceCreamCakeData',
+  initialState,
+})
+
+export default iceCreamCakeData;

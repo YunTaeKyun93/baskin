@@ -42,9 +42,9 @@ const EventBanner = () => {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     // 슬라이드 변경 시간
-    speed: 5000,
+    speed: 1000,
     // 자동 재생 유지 시간
     autoplaySpeed: 5000,
     cssEase: "linear",

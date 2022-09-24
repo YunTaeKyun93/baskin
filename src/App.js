@@ -7,18 +7,21 @@ import Navi from "./header/Navi";
 import Footer from "./pages/Footer";
 import ServiceCenter from "./header/ServiceCenter";
 import ContactUs from "./header/ContactUs";
-import Product from "./pages/Product";
+import ProductDetail from "./pages/ProductDetail";
+import Icecream from "./pages/Icecream";
+import MenuPage from './pages/MenuPage';
 function App() {
   return (
     <div>
       <Header />
       <Navi />
-
       <Routes>
         <Route path="/" exact="true" element={<Home />} />
-        <Route path="serviceCenter" element={<ServiceCenter />} />
-        <Route path="contactUs" element={<ContactUs />} />
-        <Route path="/product/:id" element={<Product />} />
+        <Route path="/serviceCenter" element={<ServiceCenter />} />
+        <Route path="/contactUs" element={<ContactUs />} />
+        <Route path="menupage/:menuname" element={<MenuPage/>}/>
+        <Route path="/icecream" element={<Icecream />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
       <Footer />
     </div>

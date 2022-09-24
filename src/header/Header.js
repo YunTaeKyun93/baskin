@@ -41,7 +41,7 @@ const Header = () => {
             <li onClick={()=>navigate('/contactUs')}>CONTACT US</li>
             <li onClick={()=>{setSearch(!search)}}>
               {
-                search == true ? <img src={Search1} /> : <img src={Search2}/>
+                search === true ? <img src={Search1} /> : <img src={Search2}/>
               }
               
             </li>

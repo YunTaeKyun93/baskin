@@ -1,10 +1,3 @@
-.wrapper {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .snsHeader {
   width: 100%;
   height: 40vh;
@@ -13,15 +6,9 @@
   align-items: center;
   justify-content: center;
   position: relative;
+
 }
-.snsHeader-icon {
-  width: 20vw;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 0;
-  box-sizing: border-box;
-  margin-top: 50px;
-}
+
 .snsHeader-title {
   width: 100%;
   height: 20px;
@@ -36,44 +23,13 @@
   background-position: center;
 }
 
-.snsGallery {
-  width: 100vw;
-  height: 90vh;
+.snsHeader-icon {
+  width: 30vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.snsGallery-title {
-  width: 100vw;
-  height: 50px;
-}
-.snsGallery-logo {
-  width: 100vw;
-  height: 50px;
-  background: url("http://www.baskinrobbins.co.kr/assets/images/main/tit_sns.png")
-    0 0 no-repeat;
-}
+  justify-content: space-evenly;
+  padding: 0 0;
+  box-sizing: border-box;
+  margin-top: 50px;
+  cursor: pointer;
 
-.snsGallery-table {
-  width: 80vw;
-  height: 80vh;
-  overflow: hidden;
-}
-
-.snsGallery-row {
-}
-.snsGallery-col {
-  height: 220px;
-  margin-bottom: 3vh;
-}
-
-.snsGallery-col img {
-  border: 1px solid rgb(211, 211, 211);
-  width: 238.16px;
-  height: 100%;
-}
-
-.on {
-  transform: translateY(-100%);
-  transition: all 1s ease-in-out;
 }
