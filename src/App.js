@@ -8,7 +8,6 @@ import Footer from "./pages/Footer";
 import ServiceCenter from "./header/ServiceCenter";
 import ContactUs from "./header/ContactUs";
 import ProductDetail from "./pages/ProductDetail";
-import Icecream from "./pages/Icecream";
 import MenuPage from './pages/MenuPage';
 function App() {
   return (
@@ -20,8 +19,7 @@ function App() {
         <Route path="/serviceCenter" element={<ServiceCenter />} />
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="menupage/:menuname" element={<MenuPage/>}/>
-        <Route path="/icecream" element={<Icecream />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/menupage/:menuname/:id" element={<ProductDetail />} />
       </Routes>
       <Footer />
     </div>

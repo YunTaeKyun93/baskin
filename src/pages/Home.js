@@ -1,10 +1,9 @@
 import React from 'react'
-import EventBanner from './EventBanner';
-import EventStore from './EventStore';
-import Test from './Test';
-import BrMenu from './BrMenu';
-import BrStore from './BrStore';
-import BrSns from './BrSns';
+import EventBanner from '../components/EventBanner';
+import EventStore from '../components/EventStore';
+import BrMenu from '../components/BrMenu';
+import BrStore from '../components/BrStore';
+import BrSns from '../components/BrSns';
 import { useEffect } from 'react';
 
 

@@ -6,7 +6,7 @@ let initialState = [
     name: "잡아라! 포켓몬 몬스터볼",
     hash: ["몬스터볼", "엄마는외계인",'슈팅스타'],
     img: 'http://www.baskinrobbins.co.kr/upload/product/1641522153.png'
-
+    
   },
   {
     id: 1,

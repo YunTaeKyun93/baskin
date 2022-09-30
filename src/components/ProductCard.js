@@ -9,12 +9,20 @@ const ss = classNames.bind(styles);
 
 const ProductCard = ({ item }) => {
   let [more, setMore] = useState(false);
+  let data = useSelector((state) => state);
   let [clickIndex, setClickIndex] = useState(0);
   let navigate = useNavigate();
+  const goToDetailPage = () => {
+    navigate(`/menupage/${data.currentMenu.name}/${item?.id}`);
+  };
 
   return (
     <Fragment>
-      <div className={ss("productCard")} onMouseLeave={()=>setMore(false)}>
+      <div
+        className={ss("productCard")}
+        onMouseLeave={() => setMore(false)}
+        onClick={(e) => goToDetailPage()}
+      >
         <p>{item?.name}</p>
         {item.hash.length > 2 ? (
           <div className={ss("productCard-hash")}>
@@ -23,34 +31,55 @@ const ProductCard = ({ item }) => {
             {item.hash.length >= 3 && (
               <div
                 className={ss("productCard-more")}
-                onClick={() => {
+                onClick={(e) => {
+                  e.stopPropagation();
                   setMore(!more);
                 }}
               ></div>
             )}
           </div>
         ) : (
-          <span>{"#" + item?.hash[0]}</span>
+          <div className={ss("productCard-hash")}>
+            {item?.hash.map((a, i) => (
+              <span key={i}>{"#" + item?.hash[i]}</span>
+            ))}
+          </div>
         )}
         <div className={ss("productCard-btn")}>
           <a
             target="_blank"
             href="https://www.happyconstore.com/brand/main.do?brandSeq=1474297546090049"
+            rel="noreferrer"
           >
             구매
           </a>
         </div>
-        <img src={item?.img} alt={item.name} />
+        {data.currentMenu.name === "icecream" ? (
+          <div className={ss("productCard-icecream")}>
+            <img src={item?.img} alt={item.name} width={"180px"} />
+            <img
+              src={process.env.PUBLIC_URL + "/img/corn.png"}
+              alt="cornImg"
+              width={"60px"}
+            />
+          </div>
+        ) : (
+          <img src={item?.img} alt={item.name} />
+        )}
+
         <div
           className={ss(`${more === true ? "productCard-hash-more" : "close"}`)}
         >
           <div className={ss("productCard-HashContent")}>
             {item?.hash.map((hashname, i) => (
-              <ul>{more && <li># {hashname}</li>}</ul>
+              <ul>{more && <li key={item?.id}># {hashname}</li>}</ul>
             ))}
             <div
               className={ss(`${more === true ? "productCard-close" : "close"}`)}
-              onClick={() => setMore(!more)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setMore(!more);
+              }}
             >
               -
             </div>

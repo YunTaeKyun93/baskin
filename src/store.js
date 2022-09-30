@@ -9,10 +9,10 @@ import drinktData from "./store/drinkSlice";
 
 let currentMenu = createSlice({
   name: "currentMenu",
-  initialState: {name:"icecream"},
+  initialState: { name: "icecream" },
   reducers: {
     changeMenu(state, dispatch) {
-      state.name = dispatch.payload
+      state.name = dispatch.payload;
     }
   }
 });

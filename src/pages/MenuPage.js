@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import classNames from "classnames/bind";
-import styles from "./css/iceCream.module.css";
+import styles from "./css/menuPage.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
-import ProductCard from "./ProductCard";
+import ProductCard from "../components/ProductCard";
 const ss = classNames.bind(styles);
 const MenuPage = () => {
   const [menuName, setMenuName] = useState();
@@ -12,6 +12,7 @@ const MenuPage = () => {
   const data = useSelector((state) => state);
   const params = useParams();
 
+  // console.log(data[params.menuname])
   useEffect(() => {
     switch (data.currentMenu.name) {
       case "icecream":
