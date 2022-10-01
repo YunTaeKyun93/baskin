@@ -1,0 +1,13 @@
+.snsMenu {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.snsMenu > li {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.snsMenu > li:first-child {
+}

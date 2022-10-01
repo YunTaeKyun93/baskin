@@ -3,35 +3,46 @@ import { createSlice } from '@reduxjs/toolkit';
 let initialState = [
   {
     id: 0,
-    name: "잡아라! 포켓몬 몬스터볼",
+    name: "짱구가 좋아하는 외계인의 바나나킥 케이크",
     hash: ["몬스터볼", "엄마는외계인",'슈팅스타'],
-    img: 'http://www.baskinrobbins.co.kr/upload/product/1641522153.png'
+    img: 'http://www.baskinrobbins.co.kr/upload/product/1641522153.png',
+    comment:"귀여운 짱구와 달콤한 바나나킥, 엄마는 외계인 초코볼을 더해 맛은 물론, 귀여운 디자인까지 잡은 실속만점 케이크",
+    icecream:['아몬드 봉봉','엄마는 외계인']
     
   },
   {
     id: 1,
-    name: "복닥복닥 닥트리오",
-    hash: ["포켓몬", "닥트리오"],
-    img: 'http://www.baskinrobbins.co.kr/upload/product/1714977259.png'
+    name: "내가 아인슈페너?! 케이크",
+    hash: ["아인슈페너", "초콜릿"],
+    mg: 'http://www.baskinrobbins.co.kr/upload/product/1714977259.png',
+    comment:'부드러움과 깊고 진한 맛의 아인슈페너 커피를 클래식한 디자인으로 재해석한 케이크',
+    icecream :['내가 아인슈페너?!','아몬드 봉봉','엄마는 외계인']
 
   },
   {
     id: 2,
-    name: "멜론 밭 속 메롱맨",
-    hash: ["미니케이크", "메론"],
-    img:'http://www.baskinrobbins.co.kr/upload/product/1691284373.png'
+    name: "복닥복닥 닥트리오",
+    hash: ["포켓몬", "닥트리오"],
+    img: 'http://www.baskinrobbins.co.kr/upload/product/1714977259.png',
+    comment:'포켓몬의 매력만점 닥트리오 캐릭터를 클레이로 표현한 디테일이 살아 있는 미니 케이크',
+    icecream:[]
   },
+
   {
     id: 3,
-    name: "메롱멜론 케이크",
+    name: "포켓몬 친구들과 산으로 바다로",
     hash: ["메론", "메롱멜론"],
-    img:'http://www.baskinrobbins.co.kr/upload/product/1691284182.png'
+    img:'http://www.baskinrobbins.co.kr/upload/product/1641651096.png',
+    comment:'바다와 산 배경을 앞/뒤 다르게 하여 반전 매력이 있는 제품으로 포켓몬의 다양한 캐릭터를 만날 수 있는 케이크',
+    icecream:[]
   },
   {
     id: 4,
     name: "팽도리와 함께 퍼즐을",
     hash: ["포켓몬","케이크"],
-    img:'http://www.baskinrobbins.co.kr/upload/product/1662455434.png'
+    img:'http://www.baskinrobbins.co.kr/upload/product/1662455434.png',
+    comment:'인기 캐릭터 팽도리를 그대로 형상화한 포켓몬 매니아들을 위한 케이크',
+    icecream:['이상한 나라의 솜사탕']
   },
   {
     id: 5,

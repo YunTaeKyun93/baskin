@@ -3,6 +3,14 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = [
   {
     id: 0,
+    name: "짱구가 좋아하는 외계인의 바나나킥",
+    engName: "ALIEN´S BANANA KICK ICE CREAM",
+    hash: ["바나나킥", "바나나"],
+    img: "http://www.baskinrobbins.co.kr/upload/product/1699512103.png",
+    comment:"초콜릿, 바나나, 바나나킥 3가지 맛 아이스크림에 바나나&초콜릿 프레첼볼과 초콜릿 칩이 어우러진 맛"
+  },
+  {
+    id: 1,
     name: "내가 아인슈페너?!",
     engName: "EINSPANNER ICE CREAM",
     hash: ["에스프레소", "우유"],
@@ -10,15 +18,7 @@ const initialState = [
     comment:
       "에스프레소 커피 아이스크림, 우유 아이스크림에 달콤한 프레체볼, 초콜릿 리본이 어우러진 맛"
   },
-  {
-    id: 1,
-    name: "잔망 딸기",
-    engName: "CUTE STRAWBERRY ICE CREAM",
-    hash: ["딸기", "밀크초콜릿"],
-    img: "http://www.baskinrobbins.co.kr/upload/product/1720430747.png",
-    comment:
-      "딸기 아이스크림, 밀크 초콜릿 아이스크림에 핑크 프레첼볼과 초콜릿 칩, 초콜릿 리본이 가득!"
-  },
+
   {
     id: 2,
     name: "ㅋㅋㅋ",

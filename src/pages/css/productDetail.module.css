@@ -1,21 +1,29 @@
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s all;
+}
+a:hover{
+  color: rgb(122, 8, 8);
+}
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .productContent {
-  margin-top: 5vh;
+  margin-top: 10vh;
   width: 60vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.productContent p:first-child{
+.productContent p:first-child {
   font-size: 0.5vw;
   color: #cc9b3b;
   margin: 0;
 }
-.productContent p:nth-child(3){
+.productContent p:nth-child(3) {
   font-size: 0.7vw;
   color: #948780;
   margin: 0;
@@ -28,18 +36,20 @@
 .productContent > h2::before {
   content: "";
   position: absolute;
-  top: -50px;
-  left: 45%;
+  top: -6vh;
+  left: 40%;
   width: 50px;
   height: 50px;
+  margin-bottom: 20px;
   background: url("http://www.baskinrobbins.co.kr/assets/images/common/icon_title_top.png")
     50% 0 no-repeat;
 }
-.itemImg{
+
+.itemImg {
   position: relative;
   z-index: 1;
 }
-.icecreamCorn{
+.icecreamCorn {
   position: absolute;
   top: 70%;
 }
@@ -61,7 +71,7 @@
   width: 35vw;
   height: 2px;
   background-color: #f56f98;
-z-index: -1;
+  z-index: -1;
 }
 .buyBtn::after {
   content: "";
@@ -72,4 +82,25 @@ z-index: -1;
   left: 0;
   background-color: #f56f98;
   z-index: -1;
+}
+
+.productSubMenu{
+  border-bottom: 1px solid #dadada;
+}
+.productSubContent{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+
+.productSubContent > button{
+  width: 178px;
+  height: 50px;
+  border-radius: 25px;
+  border :2px solid #f56f98;
+  color: #f56f98;
+  background-color: #fff;
+  /* font-weight: 900; */
+  font-family: 'NanumBarunGothic';
+
 }
